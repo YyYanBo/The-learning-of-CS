@@ -18,14 +18,21 @@ void SLTPrint(SLTNode* phead);
 SLTNode* SLTBuy(SLDatatType x);
 
 //单链表的尾插法
-void insertTail(SLTNode** phead, SLDatatType x);
+void insertTail(SLTNode** pphead, SLDatatType x);
 
 //单链表的头插法
-void insertHead(SLTNode** pplist, SLDatatType x);
+void insertHead(SLTNode** pphead, SLDatatType x);
 
 //指定位置的插入
+void insertPos(SLTNode** pphead,SLTNode* pos,SLDatatType x);
+
+//尾部删除
+void deleteTail(SLTNode** pphead);
 
 //指定位置的删除
 
-//
+//查找指定数据
+//由于不涉及对于原来单链表的修改
+//只用传递一级指针即可
+void Find(SLTNode* phead, SLDatatType x);
 

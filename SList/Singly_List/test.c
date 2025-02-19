@@ -48,17 +48,26 @@ void SListTest02()
 	insertTail(&plist, 88);
 	SLTPrint(plist);
 
+	insertPos(&plist, node2, 999);
+	SLTPrint(plist);
+
+
+
 	insertHead(&plist, 8);
 	SLTPrint(plist);
 
+	Find(plist, 88);
+
+	deleteTail(&plist);
+	SLTPrint(plist);
+
+	Find(plist, 88);
 
 }
 
 
 int main()
 {
-	//SListTest01();
-	SLTNode* new1,*new2=NULL;
-
+	SListTest02();
 	return 0;
 }
